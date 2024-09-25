@@ -238,7 +238,7 @@ To improve query performance, we carried out the following optimization process:
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
 ---
 
-## Key Insights
+## 🔍 Key Insights
 - **Track Performance**: Identified tracks with over 1 billion streams and highly viewed official videos.
 - **Artist & Album Insights**: Listed albums with artists, calculated total views per album, and counted tracks by artist.
 - **Track Attributes**: Analyzed average danceability per album, energy-to-liveness ratio, and above-average liveness scores.
