@@ -5,7 +5,7 @@ Project Category: Advanced
 ![Spotify Logo](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_logo.jpg)
 
 ## Overview
-This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using **SQL**. It covers an end-to-end process of normalizing a denormalized dataset, performing SQL queries of varying complexity (easy, medium, and advanced), and optimizing query performance. The primary goal of the project is to retrieve meaningful insights from the dataset including track performance, artist productivity, audience engagement, and track attributes. The queries focus on identifying patterns, top performers, and calculating relevant statistics.
+This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using **SQL**. It covers an end-to-end process of normalizing a denormalized dataset, performing SQL queries of varying complexity and optimizing query performance. The primary goal of the project is to retrieve meaningful insights from the dataset including track performance, artist productivity, audience engagement, and track attributes. The queries focus on identifying patterns, top performers, and calculating relevant statistics.
 
 ```sql
 -- create table
@@ -238,11 +238,20 @@ To improve query performance, we carried out the following optimization process:
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
 ---
 
+## Key Insights
+- **Track Performance**: Identified tracks with over 1 billion streams and highly viewed official videos.
+- **Artist & Album Insights**: Listed albums with artists, calculated total views per album, and counted tracks by artist.
+- **Track Attributes**: Analyzed average danceability per album, energy-to-liveness ratio, and above-average liveness scores.
+- **Engagement Metrics**: Calculated cumulative likes by views and found the top 5 most energetic tracks.
+
+**These insights offer a detailed understanding of how tracks perform and provide useful metrics for improving content strategy and marketing efforts for artists and albums.**
+
+---
+
 ## Technology Stack
 - **Database**: PostgreSQL
 - **SQL Queries**: DDL, DML, Aggregations, Subqueries, Window Functions
 - **Tools**: pgAdmin 4 (or any SQL editor), PostgreSQL (via Homebrew, Docker, or direct installation)
-
 
 ---
 
