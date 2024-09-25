@@ -189,8 +189,7 @@ ORDER BY 2 DESC;
    
 4. Find tracks where the energy-to-liveness ratio is greater than 1.2.
 ```sql
-SELECT track,
-       (energy/liveness) as energy_liveness_ratio 
+SELECT track, (energy/liveness) as energy_liveness_ratio 
 FROM spotify
 WHERE energy/liveness > 1.2;
 ```
