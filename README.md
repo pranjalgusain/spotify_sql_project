@@ -209,8 +209,8 @@ To improve query performance, we carried out the following optimization process:
 - **Initial Query Performance Analysis Using `EXPLAIN`**
     - We began by analyzing the performance of a query using the `EXPLAIN` function.
     - The query retrieved tracks based on the `artist` column, and the performance metrics were as follows:
-        - Execution time (E.T.): **7 ms**
-        - Planning time (P.T.): **0.17 ms**
+        - Execution time (E.T.): **6.42 ms**
+        - Planning time (P.T.): **0.083 ms**
     - Below is the **screenshot** of the `EXPLAIN` result before optimization:
       ![EXPLAIN Before Index](https://github.com/pranjalgusain/spotify_sql_project/blob/main/spotify_explain_before_index.png)
 
@@ -218,13 +218,13 @@ To improve query performance, we carried out the following optimization process:
     - To optimize the query performance, we created an index on the `artist` column. This ensures faster retrieval of rows where the artist is queried.
     - **SQL command** for creating the index:
       ```sql
-      CREATE INDEX idx_artist ON spotify_tracks(artist);
+      CREATE INDEX artist_index ON spotify (artist);
       ```
 
 - **Performance Analysis After Index Creation**
     - After creating the index, we ran the same query again and observed significant improvements in performance:
-        - Execution time (E.T.): **0.153 ms**
-        - Planning time (P.T.): **0.152 ms**
+        - Execution time (E.T.): **0.077 ms**
+        - Planning time (P.T.): **0.114 ms**
     - Below is the **screenshot** of the `EXPLAIN` result after index creation:
       ![EXPLAIN After Index](https://github.com/pranjalgusain/spotify_sql_project/blob/main/spotify_explain_after_index.pn)
 
